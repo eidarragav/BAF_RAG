@@ -1,7 +1,6 @@
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
-from langchain.chains.retrieval_qa.base import RetrievalQA
-
+from langchain.chains import RetrievalQA
 from config import OPENROUTER_API_KEY, OPENROUTER_BASE_URL, MODEL_NAME, CHROMA_DIR
 
 def get_qa_chain():
